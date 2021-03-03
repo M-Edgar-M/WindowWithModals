@@ -6,15 +6,13 @@
 
   .container {
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
     background-color: #fff;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-  }
-  .modules {
   }
 
   .wrapper {
@@ -33,8 +31,8 @@
     height: 100vh;
     width: 100vw;
     background-color: rgba(189, 195, 199, 0.7);
-    filter: blur(12px);
-    z-index: 10;
+    filter: blur(15px);
+    z-index: 2;
     top: 0;
     left: 0;
 
@@ -45,6 +43,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 100;
     transform: translate(-50%,-70%);
     background-color: rgb(108, 122, 137);
     text-align: center;
@@ -64,7 +63,7 @@
     font-size: 18px;
 
   }
-  .close-btn {
+  .close_btn {
     position: absolute;
     top: 0;
     right: 0;
@@ -74,13 +73,13 @@
     opacity: 0.6;
     cursor: pointer;
   }
-  .close-btn::after {
+  .close_btn::after {
     content: "\00d7";
     display: inline-block;
     font-size: 20px;
     color: #000;
 }
-  .close-btn:hover {
+  .close_btn:hover {
     opacity: 1;
   }
 
