@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .modules {
+  }
+
+  .wrapper {
+    transform: translateY(-100px) translateX(40px);
+  }
+  
+  .btn {
+    margin-right: 60px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  .overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(189, 195, 199, 0.7);
+    filter: blur(12px);
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+
+  }
+
+  .module {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    background-color: rgb(108, 122, 137);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 15px;
+    height: 300px;
+    width: 420px;
+    border: 4px #000 solid;
+    border-radius: 10px;
+  }
+
+  .module h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .module p {
+    font-size: 18px;
+
+  }
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-10px,10px);
+    border: 0.5px #000 solid;
+    width: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  .close-btn::after {
+    content: "\00d7";
+    display: inline-block;
+    font-size: 20px;
+    color: #000;
+}
+  .close-btn:hover {
+    opacity: 1;
+  }
+
+
+
+
+
+
+  .hidden {
+    display: none;
+  }
