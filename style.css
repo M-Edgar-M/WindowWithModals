@@ -7,7 +7,7 @@
   .container {
     position: relative;
     /* z-index: 1; */
-    background-color: #fff;
+    background-color: #12a5f1;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -48,11 +48,14 @@
     background-color: rgb(108, 122, 137);
     text-align: center;
     padding: 20px;
-    box-shadow: 15px;
+    box-shadow: 5px 10px 15px;
     height: 300px;
     width: 420px;
     border: 4px #000 solid;
     border-radius: 10px;
+    animation-name: moduleopen;
+    animation-duration: 0.6s;
+
   }
 
   .module h3 {
@@ -83,7 +86,10 @@
     opacity: 1;
   }
 
-
+  @keyframes moduleopen {
+    from{opacity: 0;}
+    to{opacity: 1;}
+  }
 
 
 
