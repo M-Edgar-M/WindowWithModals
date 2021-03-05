@@ -33,8 +33,6 @@ for(let i=0; i < btn.length; i++) {
             overlay.classList.remove('hidden');
         })
      }
-    // btn[i].addEventListener('click', addModule);
-    //console.log(btn[i].classList.item([1]));
 }
 
 for(let i=0; i < close_btn.length; i++) 
