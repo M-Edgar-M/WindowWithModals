@@ -80,10 +80,11 @@
     content: "\00d7";
     display: inline-block;
     font-size: 20px;
-    color: #000;
+    color: #f4f4f4;
 }
-  .close_btn:hover {
+  .close_btn:hover, .close_btn:focus {
     opacity: 1;
+    color: #000;
   }
 
   @keyframes moduleopen {
